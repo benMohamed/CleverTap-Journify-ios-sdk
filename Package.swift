@@ -33,7 +33,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "CleverTapDestination",
-            dependencies: ["journify-ios-sdk", "clevertap-ios-sdk"]),
+            dependencies: ["journify-ios-sdk", 
+			   .product(
+                                name: "CleverTapSDK",
+                                package: "clevertap-ios-sdk")
+			  ]
+		),
         
         // TESTS ARE HANDLED VIA THE EXAMPLE APP.
     ]
