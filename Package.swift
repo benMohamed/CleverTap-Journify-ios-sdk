@@ -17,15 +17,11 @@ let package = Package(
             targets: ["CleverTapDestination"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
         .package(
-            name: "Journify",
             url: "https://github.com/journifyio/journify-ios-sdk.git",
             from: "0.0.5"
         ),
 	.package(
-            name: "CleverTap",
             url: "https://github.com/CleverTap/clevertap-ios-sdk.git",
             from: "6.1.0"
         )
