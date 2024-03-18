@@ -221,7 +221,7 @@
 			);
 			mainGroup = 46EDC6E927C6B8D100B870D7;
 			packageReferences = (
-				10C6C2272BA8F8E0004CBD4A /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */,
+				10C6C2282BA8FA14004CBD4A /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */,
 			);
 			productRefGroup = 46EDC6F327C6B8D100B870D7 /* Products */;
 			projectDirPath = "";
@@ -590,12 +590,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		10C6C2272BA8F8E0004CBD4A /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */ = {
+		10C6C2282BA8FA14004CBD4A /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/benMohamed/CleverTap-Journify-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.2;
+				minimumVersion = 0.3.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
