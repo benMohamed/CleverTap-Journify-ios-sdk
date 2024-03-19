@@ -5,6 +5,7 @@
 
 import Foundation
 import Sovran
+import Journify
 import CleverTapSDK
 
 #if os(Linux)
