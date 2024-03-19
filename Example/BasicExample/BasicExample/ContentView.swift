@@ -13,28 +13,36 @@ struct ContentView: View {
         VStack {
             HStack {
                 Button(action: {
-                    Journify.main.track(name: "Track")
-                }, label: {
-                    Text("Track")
-                }).padding(6)
-                Button(action: {
-                    Journify.main.screen(title: "Screen appeared")
-                }, label: {
-                    Text("Screen")
-                }).padding(6)
-            }.padding(8)
-            HStack {
-                Button(action: {
-                    Journify.main.identify(userId: "X-1234567890")
+                    let traits: [String: Any] = ["email": "test@gmail.com",
+                                                 "name": "test",
+                                                 "lastname": "test",
+                                                 "city": "Casablanca",
+                                                 "country": "Morocco",
+                                                 "state": "AinSbaa",
+                                                 "phone": "21265581173",
+                                                 "ltv": 156]
+                    Journify.shared().identify(userId: "2024", traits: traits)
                 }, label: {
                     Text("Identify")
                 }).padding(6)
             }.padding(8)
+            HStack {
+                Button(action: {
+                    Journify.shared().track(name: "Track")
+                }, label: {
+                    Text("Track")
+                }).padding(6)
+                Button(action: {
+                    Journify.shared().screen(title: "Screen appeared")
+                }, label: {
+                    Text("Screen")
+                }).padding(6)
+            }.padding(8)
         }.onAppear {
-            Journify.main.track(name: "onAppear")
+            Journify.shared().track(name: "onAppear")
             print("Executed Analytics onAppear()")
         }.onDisappear {
-            Journify.main.track(name: "onDisappear")
+            Journify.shared().track(name: "onDisappear")
             print("Executed Analytics onDisappear()")
         }
     }
