@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10305B952BA98F8900BECDC6 /* CleverTapDestination in Frameworks */ = {isa = PBXBuildFile; productRef = 10305B942BA98F8900BECDC6 /* CleverTapDestination */; };
 		10C6C2202BA8F592004CBD4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C6C21F2BA8F592004CBD4A /* AppDelegate.swift */; };
 		46EDC6F627C6B8D100B870D7 /* BasicExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDC6F527C6B8D100B870D7 /* BasicExampleApp.swift */; };
 		46EDC6F827C6B8D100B870D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDC6F727C6B8D100B870D7 /* ContentView.swift */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10305B952BA98F8900BECDC6 /* CleverTapDestination in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,7 @@
 			);
 			name = BasicExample;
 			packageProductDependencies = (
+				10305B942BA98F8900BECDC6 /* CleverTapDestination */,
 			);
 			productName = BasicExample;
 			productReference = 46EDC6F227C6B8D100B870D7 /* BasicExample.app */;
@@ -221,6 +224,7 @@
 			);
 			mainGroup = 46EDC6E927C6B8D100B870D7;
 			packageReferences = (
+				10305B932BA98F8900BECDC6 /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */,
 			);
 			productRefGroup = 46EDC6F327C6B8D100B870D7 /* Products */;
 			projectDirPath = "";
@@ -587,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10305B932BA98F8900BECDC6 /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benMohamed/CleverTap-Journify-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10305B942BA98F8900BECDC6 /* CleverTapDestination */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10305B932BA98F8900BECDC6 /* XCRemoteSwiftPackageReference "CleverTap-Journify-ios-sdk" */;
+			productName = CleverTapDestination;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46EDC6EA27C6B8D100B870D7 /* Project object */;
 }
